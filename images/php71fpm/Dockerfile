@@ -3,7 +3,7 @@ FROM php:7.1-fpm
 RUN apt-get update
 RUN apt-get install -y curl git zip
 
-RUN docker-php-ext-install pdo pdo_mysql php-gd
+RUN docker-php-ext-install pdo pdo_mysql
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=1.10.16
 
